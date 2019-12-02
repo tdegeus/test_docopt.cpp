@@ -56,7 +56,6 @@ install:
     - conda update -q conda
     - conda install -c conda-forge cmake
     - conda install -c conda-forge make
-    - conda install -c conda-forge xtensor
     - conda install -c conda-forge docopt.cpp
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
         nm /home/travis/miniconda/lib/libdocopt.so;
