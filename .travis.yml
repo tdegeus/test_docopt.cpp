@@ -42,7 +42,6 @@ before_install:
         export CXX=clang++ CC=clang;
       fi
 install:
-    # Set environment using Conda
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
         MINCONDA_OS=$MINCONDA_LINUX;
       elif [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
@@ -60,8 +59,7 @@ install:
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
         nm /home/travis/miniconda/lib/libdocopt.so;
       fi
-script:
-    - cd example
-    - cmake .
+    - cmake example
     - make VERBOSE=1
-    - cd ..
+script:
+    - ./Run --help
