@@ -32,8 +32,8 @@ install:
   - conda update -q conda
   - conda info -a
   - conda install -c conda-forge docopt.cpp
-  - cmake -G "NMake Makefiles" -DCMAKE_INSTALL_PREFIX=%MINICONDA%\\LIBRARY -DCMAKE_BUILD_TYPE=RELEASE -DBUILD_TESTS=ON example
+  - cmake -G "NMake Makefiles" -DCMAKE_INSTALL_PREFIX=%MINICONDA%\\LIBRARY -DCMAKE_BUILD_TYPE=RELEASE example
   - nmake
 
 build_script:
-  - .\Run --help
+  - .\Run.exe --help
