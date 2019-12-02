@@ -12,6 +12,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -pedantic -g")
 find_package(docopt COMPONENTS CXX REQUIRED)
 message(STATUS "-------- ${DOCOPT_INCLUDE_DIRS}")
 include_directories(${DOCOPT_INCLUDE_DIRS})
+message(STATUS "-------- ${docopt}")
 
 find_package(xtensor REQUIRED)
 
