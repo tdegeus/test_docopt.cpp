@@ -1,5 +1,5 @@
 #include <docopt.h>
-#define _GLIBCXX_USE_CXX11_ABI 1
+#define _GLIBCXX_USE_CXX11_ABI 0
 
 // =================================================================================================
 
