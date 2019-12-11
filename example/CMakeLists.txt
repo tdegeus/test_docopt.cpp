@@ -13,4 +13,6 @@ add_executable(${PROJECT_NAME} main.cpp)
 
 target_link_libraries(${PROJECT_NAME} docopt)
 
-target_compile_definitions(${PROJECT_NAME} PUBLIC "_GLIBCXX_USE_CXX11_ABI=1")
+# target_compile_definitions(${PROJECT_NAME} PUBLIC "_GLIBCXX_USE_CXX11_ABI=1")
+target_compile_options(${PROJECT_NAME} -v)
+
