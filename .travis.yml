@@ -56,9 +56,6 @@ install:
     - conda install -c conda-forge cmake
     - conda install -c conda-forge make
     - conda install -c conda-forge docopt.cpp
-    - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-        nm /home/travis/miniconda/lib/libdocopt.so;
-      fi
     - cmake example
     - make VERBOSE=1
 script:
